@@ -2,7 +2,7 @@
 
 Multimodal search engine demo for Google [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2) (740M, released 2026-10-06). Query a mixed corpus of ~5,000 COCO images + 2,000 ESC-50 audio clips with **text**, **voice**, or an **uploaded image** — results are ranked by cosine similarity in a single 768-d space.
 
-Companion blog article: *(link TBD)*
+Companion blog article (publishing 2026-10-14): **[Multimodal search in 200 lines — EmbeddingGemma 2, direct cosine, zero FAISS](https://www.storminthecastle.com/posts/gemma_lens/)**
 
 ## Quickstart
 
