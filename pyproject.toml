@@ -1,0 +1,37 @@
+[project]
+name = "gemma-lens"
+version = "0.1.0"
+description = "Multimodal search engine demo for Google EmbeddingGemma 2"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "transformers>=5.19",
+    "sentence-transformers[image,audio,video]>=6.1.0",
+    "torch>=2.5",
+    "pillow",
+    "numpy",
+    "soundfile",
+    "librosa",
+    "pydantic>=2",
+    "python-multipart",
+    "requests",
+    "tqdm",
+    "rich",
+]
+
+[project.scripts]
+gemma-lens = "gemma_lens.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "httpx",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gemma_lens"]
